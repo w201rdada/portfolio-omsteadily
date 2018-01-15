@@ -1,24 +1,26 @@
-# My first cool idea {#slug-one}
+# Run the Joules {#Truly accurate workout tracking}
 
 #### Keywords {-}
 
-yaba, daba, do
+machine learning, image recognition, physics, exercise, weightlifting, movement, workouts, tracking, fitness, competition,
 
-## A beginning.
+## Approach the weight
 
-Chartreuse next level beard, gochujang vexillologist letterpress meggings.  Godard in  vero, raw denim asymmetrical small batch shabby chic.  Four loko id  actually, pug sartorial sustainable twee live-edge ea chartreuse typewriter disrupt ut direct trade  accusamus.  Nesciunt hoodie live-edge hell of cred, man braid ex mixtape tumblr odio skateboard 8-bit.  Cold-pressed portland nesciunt schlitz organic, lyft bespoke keffiyeh jianbing migas plaid.  Aute  delectus id  master cleanse migas.  Assumenda enamel pin man braid tumblr, four dollar toast YOLO selfies pitchfork tacos kale chips cronut hot chicken.
+The success of programs like CrossFit and Peloton have shown how effective informal competition can be as a motivator for exercise.  This works well for monomodal movements that can be effectively measured like a stationary bike, but breaks down as more movements enter the picture and apples can no longer be applied to apples - a tall person has an advantage in something like rowing, and a disadvantage in something like a thruster.  A big person might have a much more difficult time than a little person with bodyweight movements, but might be able to lift more absolute weight. What is needed is an equivalent measurement that can be applied across many domains, beyond simple reps and time.  Physics has given this to us, in the form of joules - a measure of energy.  The problem is the individual math required to calculate how many joules an individual has expended over a workout.
 
-## A middle.
+## Pick up the weight
 
-Deep v accusamus fingerstache tempor kickstarter, sunt banjo tumeric franzen irure  beard af velit  meditation kogi.  Keffiyeh fam shoreditch voluptate  pork belly.  Trust fund vape fixie, dolor  lomo exercitation cardigan.  Meggings hot chicken chartreuse, health goth 3 wolf moon lumbersexual deep v et celiac art party.  Keffiyeh magna mlkshk drinking vinegar, tbh mollit  thundercats heirloom health goth kale chips kitsch gochujang chambray aute  +1.  Heirloom ugh chicharrones franzen locavore swag.  Hexagon man braid lomo, gentrify elit shoreditch flexitarian single-origin coffee gochujang kitsch nihil yuccie mlkshk.
+The first step of the solution is simple image recognition:  an algorithm to recognize how much a barbell weighs simply by looking at it.  
 
 <!-- ...or include images directly from the web. Cite your sources! -->
 ```{r machine-learning,echo=FALSE,fig.cap='[xkcd: Machine Learning](https://xkcd.com/1838/)',fig.align='center',out.width='50%'}
 knitr::include_graphics('https://imgs.xkcd.com/comics/machine_learning.png')
 ```
 
-Commodo mustache pinterest yr, nostrud nesciunt esse  photo booth.  Keytar synth mlkshk, ullamco veniam sed laboris  seitan velit  live-edge fam gastropub.  Ad mumblecore nihil messenger bag williamsburg occaecat.  Bushwick pickled ullamco, keytar letterpress vice chillwave cillum.  Voluptate  listicle irure  food truck coloring book shoreditch.  Before they sold out four dollar toast stumptown single-origin coffee, retro nostrud veniam dreamcatcher street art subway tile sed pabst hoodie copper mug.  Everyday carry seitan vaporware gastropub etsy, freegan ramps hashtag vegan.
+Once the algorithm knows how much a barbell weighs, it can figure out how far it has moved.  From there it's simple math to figure out how much energy was expended to move it.
 
-## An end.
+The logical next steps are to estimate bodyweight by looking at a person (or allow them to simply tell you), so that bodyweight movements such as push-ups or pull-ups can be calculated.  Given a large enough training set, the algorithm could recognize not just movements (ie, that's a deadlift) and count reps for you, but could qualify the form of the movement (ie, that's a poor deadlift, and repeating it could result in injury).
+
+## Put the weight down
 
 90's salvia echo park voluptate, ennui pitchfork church-key photo booth pug aesthetic offal.  Jianbing lomo disrupt before they sold out umami.  Sapiente in  swag yr leggings, selfies distillery fap enamel pin elit aliquip listicle organic master cleanse pug.  La croix coloring book cray, vice ullamco cornhole whatever copper mug neutra pour-over vinyl kogi incididunt tilde gastropub.  Prism veniam VHS, sustainable ea meh viral duis.  Hell of health goth 8-bit microdosing sed keffiyeh.  Laboris  marfa hell of chartreuse celiac poutine keytar, iceland scenester enim nihil man bun church-key forage fam.
