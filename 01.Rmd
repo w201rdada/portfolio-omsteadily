@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Run the Joules (or, Watts Up) {#Truly accurate workout tracking}
 
 #### Keywords {-}
@@ -6,21 +11,55 @@ machine learning, image recognition, physics, exercise, weightlifting, movement,
 
 ## Approach the weight
 
-The success of programs like CrossFit and Peloton have shown how effective informal competition can be as a motivator for exercise.  This works well for monomodal movements that can be effectively measured like a stationary bike, but breaks down as more movements enter the picture and apples can no longer be applied to apples - a tall person has an advantage in something like rowing, and a disadvantage in something like a thruster.  A big person might have a much more difficult time than a little person with bodyweight movements, but might be able to lift more absolute weight. What is needed is an equivalent measurement that can be applied across many domains, beyond simple reps and time.  Physics has given this to us, in the form of joules - a measure of energy.  The problem is the individual math required to calculate how many joules an individual has expended over a workout.
+The success of programs like CrossFit and Peloton have shown how effective informal competition can be as a motivator for exercise.  This works well for monomodal movements that can be effectively measured like a stationary bike, but breaks down as more movements enter the picture and apples can no longer be compared to apples - a tall person has an advantage in something like rowing, and a disadvantage in something like a thruster.  A big person might have a much more difficult time than a little person with bodyweight movements, but might be able to lift more absolute weight. What is needed is an equivalent measurement that can be applied across many domains, beyond simple reps and time.  Physics has given this to us, in the form of joules - a measure of energy.  The problem is the individual math required to calculate how many joules an individual has expended over a workout.
+
+There could be two potentials approaches for clients and decision-makers.  At the organization level, you have gyms and programs (ie, CrossFit corporate) who could use the information to aid in competitions that they use to attract and motivate members, or there are many individuals who work out on their own who would like to know this information.  Given that the organizations will be better-positioned0 to provide much-needed training data, they seem like the more logical entry-point.
+
+CrossFit, in particular, has strong motivation here:  every year they sponsor the CrossFit Games, which is fed by an open competition in which thousands of athletes need to be evaluated by human judges.  An objective measurement would be save a lot of effort.
 
 ## Pick up the weight
 
 The first step of the solution is simple image recognition:  an algorithm to recognize how much a barbell weighs simply by looking at it.  
 
-<!-- ...or include images directly from the web. Cite your sources! -->
-```{r machine-learning,echo=FALSE,fig.cap='[xkcd: Machine Learning](https://xkcd.com/1838/)',fig.align='center',out.width='50%'}
-knitr::include_graphics('https://imgs.xkcd.com/comics/machine_learning.png')
+Here are a few images of loaded barbells from Google Images:
+```{r echo=FALSE,fig.align='center',out.width='50%'}
+knitr::include_graphics('https://static1.squarespace.com/static/566d92eedc5cb43cee298f46/t/5895d94a59cc680c3ca015e5/1486215499032/barbell.jpg?format=1500w')
+```
+```{r echo=FALSE,fig.align='center',out.width='50%'}
+knitr::include_graphics('https://halevylife.com/wp-content/uploads/2016/04/8d19c03bb4d05a87c78615454d7398f7.jpg')
+```
+```{r echo=FALSE,fig.align='center',out.width='50%'}
+knitr::include_graphics('https://iwsmt-content-ok2nbdvvyp8jbrhdp.stackpathdns.com/792012045712cciOV.jpeg')
 ```
 
-Once the algorithm knows how much a barbell weighs, it can figure out how far it has moved.  From there it's simple math to figure out how much energy was expended to move it.
+The good news is that weights are largely standardized around just a few increments:  2.5, 5, 10, 15, 25, and 45 (there are 35 and 55 sizes, but they are uncommon).  This places some limit on the possible variations in the training set.  The training parameter is also pretty simple: total weight on the bar.
 
-The logical next steps are to estimate bodyweight by looking at a person (or allow them to simply tell you), so that bodyweight movements such as push-ups or pull-ups can be calculated.  Given a large enough training set, the algorithm could recognize not just movements (ie, that's a deadlift) and count reps for you, but could qualify the form of the movement (ie, that's a poor deadlift, and repeating it could result in injury).
+There are, of course, challenges:
 
-## Put the weight down
+* Plate brand variation - a 45 pound metal plate can look a lot like a 10 or 15 pound rubber plate.  Some plates are colored, some are not - though thankfully the colored ones are consistent with Olympic weightlifting specifications.
+* Olympic barbells can be 45 or 33 pounds (men's or women's), and the difference is very subtle.
+* There is a lot of variety in 2.5, 5 and 10 pound plates.
+* Plate order:  typically bars are loaded in order of heavy to light weights, but there's no guarantee this is the case.
 
-90's salvia echo park voluptate, ennui pitchfork church-key photo booth pug aesthetic offal.  Jianbing lomo disrupt before they sold out umami.  Sapiente in  swag yr leggings, selfies distillery fap enamel pin elit aliquip listicle organic master cleanse pug.  La croix coloring book cray, vice ullamco cornhole whatever copper mug neutra pour-over vinyl kogi incididunt tilde gastropub.  Prism veniam VHS, sustainable ea meh viral duis.  Hell of health goth 8-bit microdosing sed keffiyeh.  Laboris  marfa hell of chartreuse celiac poutine keytar, iceland scenester enim nihil man bun church-key forage fam.
+Each of these and more adds complexity to the training.  To keep things simple to start with, it would be best to use Olympic plates (which are colored and standardized) and standard loading.  It also helps that all the weights are already in kilograms.
+
+```{r echo=FALSE,fig.align='center',out.width='90%'}
+knitr::include_graphics('https://i.pinimg.com/736x/ff/6c/36/ff6c36cd44e62bee75a1c6d0650e5568--plate-sets-workout-equipment.jpg')
+```
+
+The second step involves estimating the distance the bar has travelled in a rep.  Given the standardized dimensions of a the plates, you should be able to extrapolate distance, although there may be some challenge in defining when a "rep" is complete (although strictly speaking this isn't necessary - as long as you can differentiate between up and down, you can simply tally the total distance the bar travels to calculate work.  Counting reps would be preferable.)
+
+Once you know the weight and how far it has moved, you can calculate the work. In the simplest example of picking a weight up off the floor, $W = F*D$ or Work = Force times Distance.  Force can be calculated as $F = m * a$, or mass times acceleration ($9.8m/s^2$, ie, gravity).  My shoulders are 1.68 meters off the ground.  If I clean 25kgs to my shoulders, I have performed 411.6 joules, compared to someone 4 inches shorter who has done the same weight, same movement, but 25 fewer joules of work.
+
+
+## Add weight; pick it up again
+
+The logical next steps are:
+
+* to include a wider variety of bars and plates.
+* to estimate bodyweight by looking at a person (or allow them to simply tell you), so that bodyweight movements such as push-ups or pull-ups can be calculated.  
+* to incorporate angular and horizontal movements.
+* to expand beyond barbells into kettlebells, medicine balls, dumbbells, etc.
+* to recognize the movements themselves.  Once the algorithm can say "that's a deadlift," the next step is to say, "that's a bad deadlift.  Keep doing that and you're liable to injure yourself."
+
+Eventually, in conjunction with an individual recognition engine (RFID or facial recognition), it should be possible for cameras in a gym to track all movements done by an individual in a workout area and, at the end of a session, provide a detailed report of work done, calories burned, any new personal records set, update relevant leaderboards accordingly and potentially make suggestions or encouragements for the next session.  Obviously there are some privacy concerns there that would need to be addressed and communicated clearly, but it would be an invaluable tool for those willing to participate.  
