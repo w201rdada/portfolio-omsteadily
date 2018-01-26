@@ -63,3 +63,17 @@ The logical next steps are:
 * to recognize the movements themselves.  Once the algorithm can say "that's a deadlift," the next step is to say, "that's a bad deadlift.  Keep doing that and you're liable to injure yourself."
 
 Eventually, in conjunction with an individual recognition engine (RFID or facial recognition), it should be possible for cameras in a gym to track all movements done by an individual in a workout area and, at the end of a session, provide a detailed report of work done, calories burned, any new personal records set, update relevant leaderboards accordingly and potentially make suggestions or encouragements for the next session.  Obviously there are some privacy concerns there that would need to be addressed and communicated clearly, but it would be an invaluable tool for those willing to participate.  
+
+References:
+@book{gregory_essentials_2015,
+	title = {Essentials of {Strength} {Training} and {Conditioning} 4th {Edition}},
+	isbn = {978-1-4925-0162-6},
+	abstract = {Developed by the National Strength and Conditioning Association, Essentials of Strength Training and Conditioning, Fourth Edition, is the fundamental preparation text for the CSCS exam as well as a definitive reference that strength and conditioning professionals will consult in everyday practice.},
+	language = {en},
+	publisher = {Human Kinetics},
+	author = {Gregory, G., Haff and Travis, N., Triplett},
+	month = sep,
+	year = {2015},
+	note = {Google-Books-ID: bfuXCgAAQBAJ},
+	keywords = {Sports \& Recreation / Bodybuilding \& Weight Training}
+}
