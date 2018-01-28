@@ -49,9 +49,7 @@ knitr::include_graphics('https://i.pinimg.com/736x/ff/6c/36/ff6c36cd44e62bee75a1
 
 The second step involves estimating the distance the bar has travelled in a rep.  Given the standardized dimensions of a the plates, you should be able to extrapolate distance, although there may be some challenge in defining when a "rep" is complete (although strictly speaking this isn't necessary - as long as you can differentiate between up and down, you can simply tally the total distance the bar travels to calculate work.  Counting reps would be preferable.)
 
-Once you know the weight and how far it has moved, you can calculate the work. In the simplest example of picking a weight up off the floor, $W = F*D$ or Work = Force times Distance.  Force can be calculated as $F = m * a$, or mass times acceleration ($9.8m/s^2$, ie, gravity).  My shoulders are 1.68 meters off the ground.  If I clean 25kgs to my shoulders, I have performed 411.6 joules, compared to someone 4 inches shorter who has done the same weight, same movement, but 25 fewer joules of work.
-
-[@gregory_essentials_2015]
+Once you know the weight and how far it has moved, you can calculate the work. In the simplest example of picking a weight up off the floor, $W = F*D$ or Work = Force times Distance.  Force can be calculated as $F = m * a$, or mass times acceleration ($9.8m/s^2$, ie, gravity).  My shoulders are 1.68 meters off the ground.  If I clean 25kgs to my shoulders, I have performed 411.6 joules, compared to someone 4 inches shorter who has done the same weight, same movement, but 25 fewer joules of work. [@gregory_essentials_2015]
 
 ## Add weight; pick it up again
 
