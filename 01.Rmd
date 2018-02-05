@@ -13,9 +13,9 @@ machine learning, image recognition, physics, exercise, weightlifting, movement,
 
 The success of programs like CrossFit and Peloton have shown how effective informal competition can be as a motivator for exercise.  This works well for monomodal movements that can be effectively measured like a stationary bike, but breaks down as more movements enter the picture and apples can no longer be compared to apples - a tall person has an advantage in something like rowing, and a disadvantage in something like a thruster.  A big person might have a much more difficult time than a little person with bodyweight movements, but might be able to lift more absolute weight. What is needed is an equivalent measurement that can be applied across many domains, beyond simple reps and time.  Physics has given this to us, in the form of joules - a measure of energy.  The problem is the individual math required to calculate how many joules an individual has expended over a workout.
 
-There could be two potentials approaches for clients and decision-makers.  At the organization level, you have gyms and programs (ie, CrossFit corporate) who could use the information to aid in competitions that they use to attract and motivate members, or there are many individuals who work out on their own who would like to know this information.  Given that the organizations will be better-positioned0 to provide much-needed training data, they seem like the more logical entry-point.
+There are two potentials targets for clients and decision-makers here: gyms and CrossFit.  Gyms represent a walled-garden approach - they control all the equipment within their four walls, and therefore present a far simpler target for training data
 
-CrossFit, in particular, has strong motivation here:  every year they sponsor the CrossFit Games, which is fed by an open competition in which thousands of athletes need to be evaluated by human judges.  An objective measurement would be save a lot of effort.
+CrossFit, in particular, has strong motivation here:  every year they sponsor the CrossFit Games, which is fed by an open competition in which thousands of athletes need to be evaluated by human judges.  An objective measurement would save a lot of effort.
 
 ## Pick up the weight
 
