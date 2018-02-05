@@ -27,24 +27,21 @@ knitr::include_graphics('https://halevylife.com/wp-content/uploads/2016/04/8d19c
 knitr::include_graphics('https://iwsmt-content-ok2nbdvvyp8jbrhdp.stackpathdns.com/792012045712cciOV.jpeg')
 ```
 
-The good news is that weights are largely standardized around just a few increments:  2.5, 5, 10, 15, 25, and 45 (there are 35 and 55 sizes, but they are uncommon).  This places some limit on the possible variations in the training set.  The training parameter is also pretty simple: total weight on the bar.
+The good news is that weights are largely standardized around just a few increments.  This places some limit on the possible variations in the training set.  The training parameter is also pretty simple: total weight on the bar.
 
-There are, of course, challenges:
+There are, of course, challenges, primarily around variation in plate manufacture and bar loading. To keep things simple to start with, it would be best to use Olympic plates (which are colored and standardized) and standard loading.  It also helps that all the weights are already in kilograms.  These weights are very popular, particularly with anybody who does olympic lifting, so should not represent a sizable (or at least risky) equipment expense.
 
-* Plate brand variation - a 45 pound metal plate can look a lot like a 10 or 15 pound rubber plate.  Some plates are colored, some are not - though thankfully the colored ones are consistent with Olympic weightlifting specifications.
-* Olympic barbells can be 45 or 33 pounds (men's or women's), and the difference is very subtle.
-* There is a lot of variety in 2.5, 5 and 10 pound plates.
-* Plate order:  typically bars are loaded in order of heavy to light weights, but there's no guarantee this is the case.
-
-Each of these and more adds complexity to the training.  To keep things simple to start with, it would be best to use Olympic plates (which are colored and standardized) and standard loading.  It also helps that all the weights are already in kilograms.
+With a complete set of weights and barbells, it should be relatively easy to assembly a corpus of training data - simply pictures of loaded bars at all angles and weights, tagged with the total weight on the bar.
 
 ```{r echo=FALSE,fig.align='center',out.width='90%'}
 knitr::include_graphics('https://i.pinimg.com/736x/ff/6c/36/ff6c36cd44e62bee75a1c6d0650e5568--plate-sets-workout-equipment.jpg')
 ```
 
-The second step involves estimating the distance the bar has travelled in a rep.  Given the standardized dimensions of a the plates, you should be able to extrapolate distance, although there may be some challenge in defining when a "rep" is complete (although strictly speaking this isn't necessary - as long as you can differentiate between up and down, you can simply tally the total distance the bar travels to calculate work.  Counting reps would be preferable.)
+The second step involves estimating the distance the bar has travelled in a rep.  Given the standardized dimensions of the plates, you should be able to extrapolate distance, although there may be some challenge in defining when a "rep" is complete (although strictly speaking this isn't necessary - as long as you can differentiate between up and down, you can simply tally the total distance the bar travels to calculate work.  Counting reps would be preferable.)
 
 Once you know the weight and how far it has moved, you can calculate the work. In the simplest example of picking a weight up off the floor, $W = F*D$ or Work = Force times Distance.  Force can be calculated as $F = m * a$, or mass times acceleration ($9.8m/s^2$, ie, gravity).  My shoulders are 1.68 meters off the ground.  If I clean 25kgs to my shoulders, I have performed 411.6 joules, compared to someone 4 inches shorter who has done the same weight, same movement, but 25 fewer joules of work. [@gregory_essentials_2015]
+
+As a short-term proof-of-concept, the goal would be to point your phone at someone doing a set of something simple like a deadlift from any angle, and with no other input tell them how much work they performed when complete, in both joules and watts.
 
 ## Add weight; pick it up again
 
