@@ -1,12 +1,11 @@
-# My second cool idea {#slug-two}
+# Lose Yourself in the Data {#VR Data Visualization}
 
 #### Keywords {-}
-
-yaba, daba, do
+Virtual Reality, Data Visualization, Twitter
 
 ## A beginning.
 
-Nulla  sint  art party ex, mlkshk disrupt selvage 90's.  Umami sed slow-carb, fugiat  dolore nihil glossier magna migas actually farm-to-table microdosing keytar fixie.  IPhone fashion axe pinterest, cardigan street art quinoa banh mi bitters mollit  commodo pok pok culpa  delectus ut air plant.  Offal edison bulb ex, celiac 8-bit vaporware polaroid thundercats flannel kickstarter labore.  Activated charcoal portland af tousled microdosing woke, in  thundercats consectetur gluten-free hammock duis  next level DIY.  Keffiyeh commodo velit  mollit  brunch, cronut edison bulb banh mi swag stumptown crucifix hell of.  Brunch williamsburg try-hard, seitan literally vexillologist venmo DIY pariatur nesciunt master cleanse XOXO.
+Data Visualizations have evolved in the era of printed text, and tools to imagine, create and experience three- or four-dimensional visualizations live in the awkward translation space of two dimensions.
 
 ## A middle.
 
