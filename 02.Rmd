@@ -9,16 +9,13 @@ Data Visualizations have evolved in the era of printed text, and tools to imagin
 
 ## A middle.
 
-8-bit synth irony nisi wolf, street art dreamcatcher flannel placeat selvage health goth sriracha.  Glossier labore ex venmo, cillum  live-edge jianbing everyday carry af cray laborum incididunt eiusmod jean shorts.  Normcore slow-carb lyft letterpress, beard tilde art party.  Poke marfa incididunt tempor duis.  Iceland fam ex beard, activated charcoal vaporware nesciunt lyft cronut four dollar toast irony.  Officia  stumptown voluptate  unicorn culpa  bushwick.  Mollit  vero af marfa deserunt  flexitarian.
+Several possibilities present themselves:
+* Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin.
+* Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over their respective space.
+* Social data - rather than a two-dimension scrolling feed, a 360-degree representation of posts and status updates.
 
-
-```{r experimental,echo=F,results='asis',eval=F}
-data.table::fread('https://raw.githubusercontent.com/UCB-MIDS/experiments-causality/master/data/GerberGreenBook_Chapter3_Donations.csv?token=ABNmuX-Q14rzQ4teItDenc9L5Wo2flncks5ZL5qEwA%3D%3D') %>% stargazer::stargazer(type = 'html',title = 'Something from W241 Experiments and Causality')
-```
-
-
-Laborum williamsburg sunt whatever, DIY reprehenderit  retro vaporware id  hella flannel sartorial vero fugiat  before they sold out.  Copper mug salvia keffiyeh, neutra nostrud iceland keytar kogi church-key quinoa ramps mlkshk.  Seitan mollit  3 wolf moon, forage shabby chic cillum  church-key tofu exercitation aliquip.  Church-key distillery flexitarian meh incididunt retro, ugh wolf selvage hashtag.  Bicycle rights 90's officia  vape.  Listicle post-ironic vape ex.  Gluten-free lomo tumeric, yuccie everyday carry tempor put a bird on it knausgaard nisi ugh skateboard VHS.
+It is this last one I would want to focus on first:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size could be a function of the number of followers the poster has.  Their speed could be a measure of their virality.  Even their coordinates could contain information - NLP could put positive tweets in front of you, negative ones behind you.  A soundscape could reflect the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.  Touch a tweet to pause it in midair, expand the picture or play a video clip.
 
 ## An end.
 
-Kombucha pok pok lomo, forage bicycle rights paleo kickstarter literally.  Hot chicken dolor  vegan accusamus master cleanse tousled, yuccie cliche retro aesthetic bushwick actually.  Ennui viral VHS pitchfork pop-up cornhole, nihil quinoa scenester gentrify occaecat  YOLO anim.  Umami copper mug live-edge, air plant meditation bushwick chartreuse adipisicing tousled.  Art party affogato chicharrones, photo booth enim swag vero meh seitan +1 activated charcoal nihil.  Etsy gluten-free authentic mixtape.  Shabby chic duis  90's pop-up pinterest, lumbersexual mollit  cillum.
+The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude.  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
