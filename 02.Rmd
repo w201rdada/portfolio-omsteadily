@@ -1,25 +1,35 @@
-# My second cool idea {#slug-two}
+# Go Inside the Data {#VR Data Visualization}
 
 #### Keywords {-}
+Virtual Reality, Data Visualization, Twitter
 
-yaba, daba, do
+## From 2 to 3 Dimensions.
 
-## A beginning.
-
-Nulla  sint  art party ex, mlkshk disrupt selvage 90's.  Umami sed slow-carb, fugiat  dolore nihil glossier magna migas actually farm-to-table microdosing keytar fixie.  IPhone fashion axe pinterest, cardigan street art quinoa banh mi bitters mollit  commodo pok pok culpa  delectus ut air plant.  Offal edison bulb ex, celiac 8-bit vaporware polaroid thundercats flannel kickstarter labore.  Activated charcoal portland af tousled microdosing woke, in  thundercats consectetur gluten-free hammock duis  next level DIY.  Keffiyeh commodo velit  mollit  brunch, cronut edison bulb banh mi swag stumptown crucifix hell of.  Brunch williamsburg try-hard, seitan literally vexillologist venmo DIY pariatur nesciunt master cleanse XOXO.
-
-## A middle.
-
-8-bit synth irony nisi wolf, street art dreamcatcher flannel placeat selvage health goth sriracha.  Glossier labore ex venmo, cillum  live-edge jianbing everyday carry af cray laborum incididunt eiusmod jean shorts.  Normcore slow-carb lyft letterpress, beard tilde art party.  Poke marfa incididunt tempor duis.  Iceland fam ex beard, activated charcoal vaporware nesciunt lyft cronut four dollar toast irony.  Officia  stumptown voluptate  unicorn culpa  bushwick.  Mollit  vero af marfa deserunt  flexitarian.
-
-
-```{r experimental,echo=F,results='asis',eval=F}
-data.table::fread('https://raw.githubusercontent.com/UCB-MIDS/experiments-causality/master/data/GerberGreenBook_Chapter3_Donations.csv?token=ABNmuX-Q14rzQ4teItDenc9L5Wo2flncks5ZL5qEwA%3D%3D') %>% stargazer::stargazer(type = 'html',title = 'Something from W241 Experiments and Causality')
+```{r echo=FALSE,fig.cap='Two-dimensional representation of 3D space has its perils.', fig.align='center',out.width='50%'}
+knitr::include_graphics('img/OKGo.gif?format=1500w')
 ```
 
+Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.
 
-Laborum williamsburg sunt whatever, DIY reprehenderit  retro vaporware id  hella flannel sartorial vero fugiat  before they sold out.  Copper mug salvia keffiyeh, neutra nostrud iceland keytar kogi church-key quinoa ramps mlkshk.  Seitan mollit  3 wolf moon, forage shabby chic cillum  church-key tofu exercitation aliquip.  Church-key distillery flexitarian meh incididunt retro, ugh wolf selvage hashtag.  Bicycle rights 90's officia  vape.  Listicle post-ironic vape ex.  Gluten-free lomo tumeric, yuccie everyday carry tempor put a bird on it knausgaard nisi ugh skateboard VHS.
+## From 3 to 4 Dimensions.
 
-## An end.
+```{r echo=FALSE,fig.cap='Going inside the drawings can provide whole new adventures in <del>dating</del> data.',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/take-on-me-with-no-music.jpg?format=1500w')
+```
 
-Kombucha pok pok lomo, forage bicycle rights paleo kickstarter literally.  Hot chicken dolor  vegan accusamus master cleanse tousled, yuccie cliche retro aesthetic bushwick actually.  Ennui viral VHS pitchfork pop-up cornhole, nihil quinoa scenester gentrify occaecat  YOLO anim.  Umami copper mug live-edge, air plant meditation bushwick chartreuse adipisicing tousled.  Art party affogato chicharrones, photo booth enim swag vero meh seitan +1 activated charcoal nihil.  Etsy gluten-free authentic mixtape.  Shabby chic duis  90's pop-up pinterest, lumbersexual mollit  cillum.
+Several possibilities present themselves:
+* Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin.
+* Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over their respective space.
+* Social data - rather than a two-dimension scrolling feed, a 360-degree representation of posts and status updates.
+
+It is this last one I would want to focus on first, as it incorporates temporality:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size is a function of the number of followers the poster has.  Their speed is a measure of their virality.  Their color (via NLP) is a function of their emotional state.  Even their coordinates contain information: Tweet algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you're in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent.  A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.
+
+The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude.  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
+
+## And beyond.
+
+```{r echo=FALSE,fig.cap='Interactive data is sexy.',fig.align='center',out.width='50%'}
+knitr::include_graphics('img/bobhoskins.jpg?format=1500w')
+```
+There's no need to limit the space to simple observation.  Interactivity would allow you to manipulate the data parameters in real time.  Touch a tweet to pause it in midair, expand the picture or play a video clip.  Grab a tweet and make an 'expand' gesture to go inside the tweet and see a replay of its thread.  Putting a user avatar in your pocket follows them, while throwing them into the distance blocks them.  Select a hashtag and fire it overhead to change the search parameters of the space.
+
