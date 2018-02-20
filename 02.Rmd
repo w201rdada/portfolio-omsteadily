@@ -3,11 +3,11 @@
 #### Keywords {-}
 Virtual Reality, Data Visualization, Twitter
 
-## A beginning.
+## Second Dimension: Go inside the page
 
-Data Visualizations have evolved in the era of printed text, and tools to imagine, create and experience three- or four-dimensional visualizations live in the awkward translation space of two dimensions.
+Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.
 
-## A middle.
+## Third Dimension.
 
 Several possibilities present themselves:
 * Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin.
@@ -16,6 +16,6 @@ Several possibilities present themselves:
 
 It is this last one I would want to focus on first:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size could be a function of the number of followers the poster has.  Their speed could be a measure of their virality.  Even their coordinates could contain information - NLP could put positive tweets in front of you, negative ones behind you.  A soundscape could reflect the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.  Touch a tweet to pause it in midair, expand the picture or play a video clip.
 
-## An end.
+## Fourth Dimension.
 
 The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude.  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
