@@ -7,6 +7,10 @@ Virtual Reality, Data Visualization, Twitter
 
 Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.
 
+```{r echo=FALSE,fig.align='center',out.width='50%'}
+knitr::include_graphics('img/take-on-me-with-no-music.jpg?format=1500w')
+```
+
 ## Third Dimension.
 
 Several possibilities present themselves:
