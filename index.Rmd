@@ -1,6 +1,6 @@
 ---
 title: "W201 Portfolio"
-author: "Daniel OLmstead"
+author: "Daniel Olmstead"
 date: "MIDS Spring 2018"
 site: bookdown::bookdown_site
 documentclass: book
