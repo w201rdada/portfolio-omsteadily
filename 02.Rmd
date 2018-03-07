@@ -6,7 +6,7 @@ Virtual Reality, Data Visualization, Twitter
 ## From 2 to 3 Dimensions.
 
 ```{r echo=FALSE,fig.cap='Two-dimensional representation of 3D space has its perils.', fig.align='center',out.width='50%'}
-knitr::include_graphics('img/OKGo.gif?format=1500w')
+knitr::include_graphics('img/OKGo.gif')
 ```
 
 Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.
@@ -14,7 +14,7 @@ Data Visualizations have evolved in the era of printed text, and for the most pa
 ## From 3 to 4 Dimensions.
 
 ```{r echo=FALSE,fig.cap='Going inside the drawings can provide whole new adventures in <del>dating</del> data.',fig.align='center',out.width='50%'}
-knitr::include_graphics('img/take-on-me-with-no-music.jpg?format=1500w')
+knitr::include_graphics('img/take-on-me-with-no-music.jpg')
 ```
 
 Several possibilities present themselves:
@@ -29,6 +29,6 @@ The data is available via the Twitter API; the primary challenge here is transla
 ## And beyond.
 
 ```{r echo=FALSE,fig.cap='Interactive data is sexy.',fig.align='center',out.width='50%'}
-knitr::include_graphics('img/bobhoskins.jpg?format=1500w')
+knitr::include_graphics('img/bobhoskins.jpg')
 ```
 There's no need to limit the space to simple observation.  Interactivity would allow you to manipulate the data parameters in real time.  Touch a tweet to pause it in midair, expand the picture or play a video clip.  Grab a tweet and make an 'expand' gesture to go inside the tweet and see a replay of its thread.  Putting a user avatar in your pocket follows them, while throwing them into the distance blocks them.  Select a hashtag and fire it overhead to change the search parameters of the space.
