@@ -14,7 +14,7 @@ Data Visualizations have evolved in the era of printed text, and for the most pa
 ## From 3 to 4 Dimensions.
 
 ```{r echo=FALSE,fig.cap='Going inside the drawings can provide whole new adventures in <del>dating</del> data.',fig.align='center',out.width='50%'}
-knitr::include_graphics('img/take-on-me-with-no-music.jpg')
+knitr::include_graphics('img/take-on-me-o.gif')
 ```
 
 Several possibilities present themselves:
@@ -29,6 +29,6 @@ The data is available via the Twitter API; the primary challenge here is transla
 ## And beyond.
 
 ```{r echo=FALSE,fig.cap='Interactive data is sexy.',fig.align='center',out.width='50%'}
-knitr::include_graphics('img/bobhoskins.jpg')
+knitr::include_graphics('img/roger_rabbit.gif')
 ```
 There's no need to limit the space to simple observation.  Interactivity would allow you to manipulate the data parameters in real time.  Touch a tweet to pause it in midair, expand the picture or play a video clip.  Grab a tweet and make an 'expand' gesture to go inside the tweet and see a replay of its thread.  Putting a user avatar in your pocket follows them, while throwing them into the distance blocks them.  Select a hashtag and fire it overhead to change the search parameters of the space.
