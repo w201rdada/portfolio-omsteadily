@@ -1,4 +1,4 @@
-# Go Inside the Data {#VR-Data-Visualization-Interaction}
+# Go Inside the Data with DataDiVR {#VR-Data-Visualization-Interaction}
 
 #### Keywords {-}
 Virtual Reality, Data Visualization, Twitter
@@ -9,20 +9,19 @@ Virtual Reality, Data Visualization, Twitter
 knitr::include_graphics('img/OKGo.gif')
 ```
 
-Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.
+Data Visualizations have grown sophisticated in the era of computer-aided design, but for the most part tools to imagine, create and experience three- or four-dimensional visualizations still operate in the awkward translation space of two dimensions.  While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.  A toolset that places you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.  In the past two years, virtual reality display technologies and development tools have advanced to the point where this is possible.  While companies like Tableau make it easy to paint pretty, still pictures with data, DataDiVR brings the data to vivid life around you.
 
 ## From 3 to 4 Dimensions.
 
 ```{r echo=FALSE,fig.cap='Going inside the drawings can provide whole new adventures in <del>dating</del> data.',fig.align='center',out.width='50%'}
 knitr::include_graphics('img/take-on-me-o.gif')
 ```
-
-Several possibilities present themselves:
+Several possibilities present themselves as places to start:
 * Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin.
 * Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over their respective space.
 * Social data - rather than a two-dimension scrolling feed, a 360-degree representation of posts and status updates.
 
-It is this last one I would want to focus on first, as it incorporates temporality:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size is a function of the number of followers the poster has.  Their speed is a measure of their virality.  Their color (via NLP) is a function of their emotional state.  Even their coordinates contain information: Tweet algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you're in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent.  A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.
+It is this last one I will focus on first, as it incorporates temporality:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size is a function of the number of followers the poster has.  Their speed is a measure of their virality.  Their color (via NLP) is a function of their emotional state.  Even their coordinates contain information: Tweet algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you're in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent.  A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.
 
 The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude.  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
 
