@@ -72,7 +72,7 @@
 <li class="chapter" data-level="1.2" data-path="Truly-accurate-workout-tracking.html"><a href="Truly-accurate-workout-tracking.html#pick-up-the-weight"><i class="fa fa-check"></i><b>1.2</b> Pick up the weight</a></li>
 <li class="chapter" data-level="1.3" data-path="Truly-accurate-workout-tracking.html"><a href="Truly-accurate-workout-tracking.html#add-weight-pick-it-up-again"><i class="fa fa-check"></i><b>1.3</b> Add weight; pick it up again</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="VR-Data-Visualization-Interaction.html"><a href="VR-Data-Visualization-Interaction.html"><i class="fa fa-check"></i><b>2</b> Go Inside the Data</a><ul>
+<li class="chapter" data-level="2" data-path="VR-Data-Visualization-Interaction.html"><a href="VR-Data-Visualization-Interaction.html"><i class="fa fa-check"></i><b>2</b> Go Inside the Data with DataDiVR</a><ul>
 <li class="chapter" data-level="2.1" data-path="VR-Data-Visualization-Interaction.html"><a href="VR-Data-Visualization-Interaction.html#from-2-to-3-dimensions."><i class="fa fa-check"></i><b>2.1</b> From 2 to 3 Dimensions.</a></li>
 <li class="chapter" data-level="2.2" data-path="VR-Data-Visualization-Interaction.html"><a href="VR-Data-Visualization-Interaction.html#from-3-to-4-dimensions."><i class="fa fa-check"></i><b>2.2</b> From 3 to 4 Dimensions.</a></li>
 <li class="chapter" data-level="2.3" data-path="VR-Data-Visualization-Interaction.html"><a href="VR-Data-Visualization-Interaction.html#and-beyond."><i class="fa fa-check"></i><b>2.3</b> And beyond.</a></li>
@@ -101,43 +101,57 @@
 
             <section class="normal" id="section-">
 <div id="VR-Data-Visualization-Interaction" class="section level1">
-<h1><span class="header-section-number">2</span> Go Inside the Data</h1>
+<h1><span class="header-section-number">2</span> Go Inside the Data with DataDiVR</h1>
 <div id="keywords-1" class="section level4 unnumbered">
 <h4>Keywords</h4>
-<p>Virtual Reality, Data Visualization, Twitter</p>
+<p>Virtual Reality, VR, Data Visualization, Twitter, DataDiVR</p>
 </div>
 <div id="from-2-to-3-dimensions." class="section level2">
 <h2><span class="header-section-number">2.1</span> From 2 to 3 Dimensions.</h2>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="img/OKGo.gif?format=1500w" alt="Two-dimensional representation of 3D space has its perils." width="50%" />
+<img src="img/OKGo.gif" alt="Two-dimensional representation of 3D space has its perils." width="50%" />
 <p class="caption">
 Figure 2.1: Two-dimensional representation of 3D space has its perils.
 </p>
 </div>
-<p>Data Visualizations have evolved in the era of printed text, and for the most part, tools to imagine, create and experience three- or four-dimensional visualizations still live in the awkward translation space of two dimensions. While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent. A toolset that placed you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations.</p>
+<p>Data Visualizations have grown sophisticated in the era of computer-aided design, but for the most part tools to imagine, create and experience three- or four-dimensional visualizations still operate in the awkward translation space of two dimensions. While these are useful, anyone wrestling with two or more joint distributions of continuous random variables can attest that these relationships are difficult to envision, much less represent.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="https://www.researchgate.net/publication/298429887/figure/fig6/AS:340306768744460@1458146864430/Three-dimensional-scatter-plot-based-on-size-protein-concentration-and-attenuation-of.png" alt="This is hard to read." width="50%" />
+<p class="caption">
+Figure 2.2: This is hard to read.
+</p>
+</div>
+<p>A toolset that places you in the same dimensional space as the visualization would be helpful in deriving insights more quickly and intuitively than in interpreting two-dimensional representations. In the past two years, virtual reality display technologies and development tools have advanced to the point where this is possible. While companies like Tableau make it easy to paint pretty, still pictures with data, DataDiVR brings the data to vivid life around you with a set of software tools that quickly turn vectors and matrices into templated VR objects.</p>
 </div>
 <div id="from-3-to-4-dimensions." class="section level2">
 <h2><span class="header-section-number">2.2</span> From 3 to 4 Dimensions.</h2>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
-<img src="img/take-on-me-with-no-music.jpg?format=1500w" alt="Going inside the drawings can provide whole new adventures in &lt;del&gt;dating&lt;/del&gt; data." width="50%" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
+<img src="img/take-on-me-o.gif" alt="Going inside the drawings can provide whole new adventures in &lt;del&gt;dating&lt;/del&gt; data." width="50%" />
 <p class="caption">
-Figure 2.2: Going inside the drawings can provide whole new adventures in <del>dating</del> data.
+Figure 2.3: Going inside the drawings can provide whole new adventures in <del>dating</del> data.
 </p>
 </div>
-<p>Several possibilities present themselves: * Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin. * Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over their respective space. * Social data - rather than a two-dimension scrolling feed, a 360-degree representation of posts and status updates.</p>
-<p>It is this last one I would want to focus on first, as it incorporates temporality: a Twitter space where tweets fall around you in real-time like rain. Their relative size is a function of the number of followers the poster has. Their speed is a measure of their virality. Their color (via NLP) is a function of their emotional state. Even their coordinates contain information: Tweet algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you’re in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent. A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.</p>
-<p>The data is available via the Twitter API; the primary challenge here is translating it into a virtual space. Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude. Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.</p>
+<p>Several possibilities present themselves as places to start: * Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin. * Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over its respective space. * Three or four-dimensional data models that you can hold and rotate in your hands like a crystal ball * Social data - rather than a two-dimension scrolling feed, a 360-degree representation of posts and status updates.</p>
+<p>It is this last one that DataDiVR will focus on first, as it incorporates temporality: a Twitter space where tweets fall around you in real-time like rain. Their relative size is a function of the number of followers the poster has. Their speed is a measure of their virality. Their color (via NLP) is a function of their emotional state. Even their coordinates contain information: Tweets algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you’re in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent. A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.</p>
+<p>The data is available via the Twitter API; the primary challenge here is translating it into a virtual space. Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude <span class="citation">(“Webxr: Repository for the WebXR Device API Specification” <a href="#ref-noauthor_webxr:_2018">2018</a>)</span>. Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.</p>
 </div>
 <div id="and-beyond." class="section level2">
 <h2><span class="header-section-number">2.3</span> And beyond.</h2>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
-<img src="img/bobhoskins.jpg?format=1500w" alt="Interactive data is sexy." width="50%" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="img/roger_rabbit.gif" alt="Interactive data is sexy." width="50%" />
 <p class="caption">
-Figure 2.3: Interactive data is sexy.
+Figure 2.4: Interactive data is sexy.
 </p>
 </div>
 <p>There’s no need to limit the space to simple observation. Interactivity would allow you to manipulate the data parameters in real time. Touch a tweet to pause it in midair, expand the picture or play a video clip. Grab a tweet and make an ‘expand’ gesture to go inside the tweet and see a replay of its thread. Putting a user avatar in your pocket follows them, while throwing them into the distance blocks them. Select a hashtag and fire it overhead to change the search parameters of the space.</p>
+<p>While VR hardware is not yet widely distributed, it is well within the grasp of most professionals - there just aren’t very many applications for it outside of games and entertainment. Productivity software like DataDiVR will bring VR into the workspace and enable new insights in both business and research.</p>
 
+</div>
+</div>
+<h3>Bibliography</h3>
+<div id="refs" class="references">
+<div id="ref-noauthor_webxr:_2018">
+<p>“Webxr: Repository for the WebXR Device API Specification.” 2018. Immersive Web Community Group. <a href="https://github.com/immersive-web/webxr" class="uri">https://github.com/immersive-web/webxr</a>.</p>
 </div>
 </div>
             </section>
