@@ -28,7 +28,7 @@ Several possibilities present themselves as places to start:
 
 It is this last one that DataDiVR will focus on first, as it incorporates temporality:  a Twitter space where tweets fall around you in real-time like rain.  Their relative size is a function of the number of followers the poster has.  Their speed is a measure of their virality.  Their color (via NLP) is a function of their emotional state.  Even their coordinates contain information: Tweets algorithmically determined to be most relevant to your query appear closer, while less relevant ones fall farther away; or you're in a map space of arbitrary dimensions, and geotagged tweets bubble up from where they were sent.  A soundscape reflects the volume of tweets in space at a given time, such that you experience mild tension when in a controversial space.
 
-The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude [@misc].  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
+The data is available via the Twitter API; the primary challenge here is translating it into a virtual space.  Toolsets like WebVR are making it easier for people other than professional game developers to build things, but they are still crude [@noauthor_webxr:_2018].  Ideally, this would be a collaboration of someone proficient in something like Unity with a data scientist.
 
 ## And beyond.
 
