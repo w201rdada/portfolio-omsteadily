@@ -21,6 +21,7 @@ A toolset that places you in the same dimensional space as the visualization wou
 knitr::include_graphics('img/take-on-me-o.gif')
 ```
 Several possibilities present themselves as places to start:
+
 * Three-dimensional scatterplots of human-scale dimensions to delineate correlations across three variables, with you standing at the origin.
 * Geographic data - stand like a giant over the Bay Area, with county or zipcode-level data hovering over its respective space.
 * Three or four-dimensional data models that you can hold and rotate in your hands like a crystal ball
